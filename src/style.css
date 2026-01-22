@@ -30,13 +30,11 @@ body{
 header{
   display: flex;
   justify-content: space-between;
-  }
+  border-bottom: 1px solid gray;
+}
 header img{
   max-width: 100px;
   padding: 10px;
-}
-hr{
-  color: var(--color-text);
 }
 nav{
   display: flex;
