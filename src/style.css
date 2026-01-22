@@ -1,7 +1,11 @@
 /* -------------------------------- */
 /* ---------- CSS Reset ----------- */
 /* -------------------------------- */
-
+:root{
+  --color-background: black;
+  --color-text: #f5f5f5;
+  --font-family: Arial, sans-serif;
+}
 * {
   margin: 0;
   padding: 0;
@@ -17,3 +21,99 @@ img {
 }
 
 /* Add your styles below */
+body{
+  background-color: var(--color-background);
+  color:var(--color-text);
+  font-family: var(--font-family);
+  font-size: small;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+}
+header img{
+  max-width: 100px;
+  padding: 10px;
+}
+nav{
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+}
+nav >a{
+  color: var(--color-text);
+  text-decoration: none;
+  font-size:medium;
+}
+nav>a:hover{
+
+  text-decoration-color: var(--color-text);
+  text-decoration:underline;
+}
+main{
+  display: block;
+  justify-content: center;
+  padding: 40px;
+}
+#user{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 40px;
+  justify-content: center;
+}
+#user img{
+  max-width: 300px;
+  border-radius: 50%;
+  margin-left: 0 auto ;
+}
+#bio{
+  max-width: 500px;
+}
+#bio h1{
+  gap: 10px;
+}
+#bio ul{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-weight: bold;
+}
+#bio li{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#bio p{
+  line-height: 1.5;
+}
+#gallery{
+  display: grid;
+  gap: 20px;
+  padding-top: 40px;
+}
+#gallery figure{
+  aspect-ratio: 1;
+}
+@media (min-width: 768px) {
+  #gallery{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #bio{
+    max-width: 500px;
+  }
+  #user{
+    gap: 40px;
+  }
+}
+@media (min-width: 992px) {
+  #gallery{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #bio{
+    max-width: 500px;
+  }
+  #user{
+    gap: 40px;
+  }
+}
