@@ -17,3 +17,19 @@ img {
 }
 
 /* Add your styles below */
+body{
+  background-color: black;
+}
+header{
+  display: flex;
+  justify-content: inline;
+  gap:70%;
+}
+header img{
+  max-width: 100px;
+  padding: 10px;
+}
+nav{
+  display: block;
+  justify-content: inline;
+}
