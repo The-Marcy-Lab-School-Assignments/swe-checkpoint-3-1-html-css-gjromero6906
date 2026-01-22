@@ -35,6 +35,9 @@ header img{
   max-width: 100px;
   padding: 10px;
 }
+hr{
+  color: var(--color-text);
+}
 nav{
   display: flex;
   gap: 10px;
